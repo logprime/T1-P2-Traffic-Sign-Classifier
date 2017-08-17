@@ -20,7 +20,7 @@ The goals / steps of this project are the following:
 [//]: #  (Image References)
 
 [image1]:  ./examples/hist_train.png "Visualization"
-[image2]:  ./examples/normalized.png "Normalized"
+[image2]:  ./examples/norm.png "Normalized"
 [image3]:  ./examples/random_noise.jpg "Random Noise"
 [image4]:  ./examples/1.png "Traffic Sign 1"
 [image5]:  ./examples/2.png "Traffic Sign 2"
@@ -67,7 +67,7 @@ As we can see, there are some traffic signs which appear more times than others.
 
 As a first step, I normalized the data from range of (0,255) to (-1,1). Here is the example of traffic sign image before and after normalizing.
 
-![alt text][image2]
+![Histogram][image2]
 
 I experimented with gray scaling and decided to keep all 3 layers going into the first layer of CNN. However, I decided to generate additional data using rotation (took help of some other examples on the github to accomplish this) since I wanted to increase the dataset for training purposes. As we are aware, the accuracy of the model tends to improve with the size of the training data.  
 
