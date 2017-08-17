@@ -24,9 +24,9 @@ The goals / steps of this project are the following:
 [image3]:  ./examples/augmented.png "Augmented "
 [image4]:  ./examples/1.png "Traffic Sign 1"
 [image5]:  ./examples/2.png "Traffic Sign 2"
-[image6]:  ./examples/3.png "Traffic Sign 3"
+[image6]:  ./examples/13.png "Traffic Sign 3"
 [image7]:  ./examples/4.png "Traffic Sign 4"
-[image8]:  ./examples/5.png "Traffic Sign 5"
+[image8]:  ./examples/8.png "Traffic Sign 5"
 [image9]: ./examples/top5.png "Top 5 Softmax"
 
 ## Rubric Points
