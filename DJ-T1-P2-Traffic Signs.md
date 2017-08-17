@@ -147,7 +147,7 @@ If an iterative approach was chosen:
 
 Here are five traffic signs that I downloaded from the web:-
 
-![alt text][image4] ![alt text][image5] ![alt text][image6] 
+![alt text][image1] ![alt text][image5] ![alt text][image6] 
 ![alt text][image7] ![alt text][image8]
 
 Some of these images are difficult to classify as the resize 
