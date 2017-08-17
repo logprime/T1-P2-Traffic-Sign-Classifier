@@ -21,12 +21,13 @@ The goals / steps of this project are the following:
 
 [image1]:  ./examples/hist_train.png "Visualization"
 [image2]:  ./examples/norm.png "Normalized"
-[image3]:  ./examples/random_noise.jpg "Random Noise"
+[image3]:  ./examples/augmented.png "Augmented "
 [image4]:  ./examples/1.png "Traffic Sign 1"
 [image5]:  ./examples/2.png "Traffic Sign 2"
 [image6]:  ./examples/3.png "Traffic Sign 3"
 [image7]:  ./examples/4.png "Traffic Sign 4"
 [image8]:  ./examples/5.png "Traffic Sign 5"
+[image9]: ./examples/top5.png "Top 5 Softmax"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -67,7 +68,7 @@ As we can see, there are some traffic signs which appear more times than others.
 
 As a first step, I normalized the data from range of (0,255) to (-1,1). Here is the example of traffic sign image before and after normalizing.
 
-![Histogram][image2]
+![Normalized][image2]
 
 I experimented with gray scaling and decided to keep all 3 layers going into the first layer of CNN. However, I decided to generate additional data using rotation (took help of some other examples on the github to accomplish this) since I wanted to increase the dataset for training purposes. As we are aware, the accuracy of the model tends to improve with the size of the training data.  
 
@@ -75,6 +76,7 @@ All examples of my images are included in the python notebook.
 
 The difference between the original data set and the augmented data set is the following ... 
 
+![Augumented Data][Image3]
 
 ####2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
 
