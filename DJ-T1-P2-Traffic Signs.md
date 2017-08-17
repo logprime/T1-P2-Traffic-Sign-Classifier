@@ -175,7 +175,9 @@ The top five soft max probabilities captured were:-
 ![softmax][image13]
 
 
-The top probabilities indicate that the 
+The top probabilities indicate that there are some images like "Yield" image which classifier confidently and correctly predicts. There are others such as Dangerous curve to the left and Turn left ahead which confused the classifier.
+
+Further study of the original training set is needed to better understand the network behavior on the classification of these signs. 
 
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 ####1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
