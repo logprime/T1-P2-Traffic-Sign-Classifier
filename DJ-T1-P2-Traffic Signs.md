@@ -19,8 +19,8 @@ The goals / steps of this project are the following:
 
 [//]: #  (Image References)
 
-![alt text][image1]: ./examples/visualization.jpg "Visualization"
-![alt text][image2]: ./examples/grayscale.jpg "Grayscaling"
+![alt text][image1]: ./examples/train_hist.png "Visualization"
+![alt text][image2]: ./examples/normalized.png "Normalized"
 ![alt text][image3]: ./examples/random_noise.jpg "Random Noise"
 ![alt text][image4]: ./examples/1.png "Traffic Sign 1"
 ![alt text][image5]: ./examples/2.png "Traffic Sign 2"
@@ -55,7 +55,7 @@ signs data set:
 
 Here is an exploratory visualization of the data set. It is a bar chart showing how the data labels are distributed across various label counts for the training data.
 
-[image9]: ./examples/train_hist.png "Histogram for Training Set"
+![alt text][image1]: 
 
 As we can see, there are some traffic signs which appear more times than others. This is to be expected since some signs such as speed limit signs are more common than say animal crossing signs.
 
