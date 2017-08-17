@@ -28,6 +28,8 @@ The goals / steps of this project are the following:
 [image7]:  ./examples/4.png "Traffic Sign 4"
 [image8]:  ./examples/8.png "Traffic Sign 5"
 [image9]: ./examples/top5.png "Top 5 Softmax"
+[image10]:  ./examples/12.png "Traffic Sign 6"
+
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -150,7 +152,7 @@ If an iterative approach was chosen:
 Here are five traffic signs that I downloaded from the web:-
 
 ![alt text][image4] ![alt text][image5] ![alt text][image6] 
-![alt text][image7] ![alt text][image8]
+![alt text][image7] ![alt text][image8] ![alt text][image10]
 
 Some of these images are difficult to classify as the resize 
 ####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
