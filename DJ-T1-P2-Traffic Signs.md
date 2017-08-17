@@ -29,6 +29,8 @@ The goals / steps of this project are the following:
 [image8]:  ./examples/8.png "Traffic Sign 5"
 [image9]: ./examples/top5.png "Top 5 Softmax"
 [image10]:  ./examples/12.png "Traffic Sign 6"
+[image11]: ./examples/results1.png "Results 1"
+[image12]: ./examples/results2.png "Results 2"
 
 
 ## Rubric Points
@@ -154,38 +156,33 @@ Here are five traffic signs that I downloaded from the web:-
 ![alt text][image4] ![alt text][image5] ![alt text][image6] 
 ![alt text][image7] ![alt text][image8] ![alt text][image10]
 
-Some of these images are difficult to classify as the resize 
+Some of these images are difficult to classify as the sizes of these images are not the same. 
+
 ####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
 Here are the results of the prediction:
 
-| Image			        |     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| Stop Sign      		| Stop sign   									| 
-| U-turn     			| U-turn 										|
-| Yield					| Yield											|
-| 100 km/h	      		| Bumpy Road					 				|
-| Slippery Road			| Slippery Road      							|
+![results1][image11]
+![results2][image12]
 
-
-The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of ...
 
 ####3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
-The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
+The top five soft max probabilities were
 
-For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
-
-| Probability         	|     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| .60         			| Stop sign   									| 
-| .20     				| U-turn 										|
-| .05					| Yield											|
-| .04	      			| Bumpy Road					 				|
-| .01				    | Slippery Road      							|
-
-
-For the second image ... 
+[17, 12, 26, 13, 14],
+[11, 27, 18, 26, 24],
+[31, 18, 25, 22, 20],
+[25, 38, 22, 18, 20],
+[ 1,  0, 31, 17, 18],
+[13, 12, 35,  9, 17],
+[19, 23, 11, 35, 37],
+[ 1,  2, 40, 38,  0],
+[25, 13, 35, 29, 28],
+[19, 23, 11, 35, 37],
+[19, 23, 11, 35, 37],
+[18, 26, 38,  4, 20],
+[13, 12, 35, 38, 34]
 
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 ####1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
