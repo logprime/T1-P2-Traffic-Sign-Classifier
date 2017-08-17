@@ -19,14 +19,14 @@ The goals / steps of this project are the following:
 
 [//]: #  (Image References)
 
-[image1]: ./examples/train_hist.png "Visualization"
-[image2]: ./examples/normalized.png "Normalized"
-[image3]: ./examples/random_noise.jpg "Random Noise"
-[image4]: ./examples/1.png "Traffic Sign 1"
-[image5]: ./examples/2.png "Traffic Sign 2"
-[image6]: ./examples/3.png "Traffic Sign 3"
-[image7]: ./examples/4.png "Traffic Sign 4"
-[image8]: ./examples/5.png "Traffic Sign 5"
+[image1]:  ./examples/train_hist.png "Visualization"
+[image2]:  ./examples/normalized.png "Normalized"
+[image3]:  ./examples/random_noise.jpg "Random Noise"
+[image4]:  ./examples/1.png "Traffic Sign 1"
+[image5]:  ./examples/2.png "Traffic Sign 2"
+[image6]:  ./examples/3.png "Traffic Sign 3"
+[image7]:  ./examples/4.png "Traffic Sign 4"
+[image8]:  ./examples/5.png "Traffic Sign 5"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -57,7 +57,7 @@ signs data set:
 
 Here is an exploratory visualization of the data set. It is a bar chart showing how the data labels are distributed across various label counts for the training data.
 
-![alt text][image1]
+![Histogram][image1]
 
 As we can see, there are some traffic signs which appear more times than others. This is to be expected since some signs such as speed limit signs are more common than say animal crossing signs.
 
@@ -94,10 +94,12 @@ My final model consisted of the following layers:
 | RELU and Dropouts						|												|
 | Fully connected | Input 240 Outputs 120    
 |
-|RELU and Dropouts ||
+|RELU and Dropouts |
+|
 | Fully connected | Input 120 Outputs 84
 |
-| RELU and Dropouts ||
+| RELU and Dropouts |
+|
 | Fully connected | Inputs 84 Outputs 43|  
 
 
@@ -105,9 +107,9 @@ My final model consisted of the following layers:
 
 I used standard Adam optimizer for the optimization. I experimented with various hyper parameters as well as the model layers. I have included two models in my submission. One of the two provides a better accuracy. I set following hyper parameters:-
 
-EPOCHS = 20
-BATCH SIZE = 128
-LEARNING RATE = 5e-4
+* EPOCHS = 20
+* BATCH SIZE = 128
+* LEARNING RATE = 5e-4
 
 I found that with those settings I was able to get validation accuracy above 94% as needed for this assignment. 
 
@@ -115,23 +117,26 @@ I found that with those settings I was able to get validation accuracy above 94%
 
 My final model results were:
 EPOCH 20 ...
-* Validation Accuracy = 96.4%
-* Training Accuracy = 100%
-* Test Accuracy = 95.368%
+- Validation Accuracy = 96.4%
+- Training Accuracy = 100%
+- Test Accuracy = 95.368%
 
 If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen? 
-* My first architecture tried was standard LeNet to make the model work. 
+- My first architecture tried was standard LeNet to make the model work.  The reason was to ensure that entire python notebook compiled properly. I discovered some nuances on making the training sequence work which was helpful for subsequent model planning. Specifically the point of shuffling at the beginning of the training start was where I was making an error initially.
 
 * What were some problems with the initial architecture?
-* My validation accuracy needed was stuck at 91%.
+   - My validation accuracy needed was stuck at 91%.
 * How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to overfitting or underfitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
-* My initial architecture was underfitting. I adjusted my architecture by studying other similar architectures on git hub to get my validation to 
+ - My initial architecture was underfitting. I adjusted my architecture by studying other similar architectures on git hub to get my validation accuracy higher than 94%. I was able to find multiple solutions which ensured this. 
 * Which parameters were tuned? How were they adjusted and why?
+  - The parameter tuning was done mainly by adjusting the Epochs and learning rate as well as drop out rate. 
 * What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
-
-If a well known architecture was chosen:
+	* CNN works well with this problem due to following two main reasons:-
+		* Translation Invariance: Ability to spot similar features across entire image segment using parameter sharing
+		* Hierarchy based classification: Different layers of CNN get tuned to identify different features (e.g. line, edges or dark spots etc).
 * What architecture was chosen?
+	* I used modified LeNet architecture based on some of the other studies done on GitHub as well as 
 * Why did you believe it would be relevant to the traffic sign application?
 * How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?
  
@@ -140,13 +145,12 @@ If a well known architecture was chosen:
 
 ####1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
 
-Here are five German traffic signs that I found on the web:
+Here are five traffic signs that I downloaded from the web:-
 
 ![alt text][image4] ![alt text][image5] ![alt text][image6] 
 ![alt text][image7] ![alt text][image8]
 
-The first image might be difficult to classify because ...
-
+Some of these images are difficult to classify as the resize 
 ####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
 Here are the results of the prediction:
