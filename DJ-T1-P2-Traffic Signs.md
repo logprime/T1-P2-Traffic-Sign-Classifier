@@ -31,6 +31,8 @@ The goals / steps of this project are the following:
 [image10]:  ./examples/12.png "Traffic Sign 6"
 [image11]: ./examples/results1.png "Results 1"
 [image12]: ./examples/results2.png "Results 2"
+[image13]: ./examples/softmax.png "Soft Max"
+
 
 
 ## Rubric Points
@@ -168,21 +170,12 @@ Here are the results of the prediction:
 
 ####3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
-The top five soft max probabilities were
+The top five soft max probabilities captured were:-
 
-[17, 12, 26, 13, 14],
-[11, 27, 18, 26, 24],
-[31, 18, 25, 22, 20],
-[25, 38, 22, 18, 20],
-[ 1,  0, 31, 17, 18],
-[13, 12, 35,  9, 17],
-[19, 23, 11, 35, 37],
-[ 1,  2, 40, 38,  0],
-[25, 13, 35, 29, 28],
-[19, 23, 11, 35, 37],
-[19, 23, 11, 35, 37],
-[18, 26, 38,  4, 20],
-[13, 12, 35, 38, 34]
+![softmax][image13]
+
+
+The top probabilities indicate that the 
 
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 ####1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
