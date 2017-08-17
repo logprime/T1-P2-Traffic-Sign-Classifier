@@ -19,14 +19,14 @@ The goals / steps of this project are the following:
 
 [//]: #  (Image References)
 
-![alt text][image1]: ./examples/train_hist.png "Visualization"
-![alt text][image2]: ./examples/normalized.png "Normalized"
-![alt text][image3]: ./examples/random_noise.jpg "Random Noise"
-![alt text][image4]: ./examples/1.png "Traffic Sign 1"
-![alt text][image5]: ./examples/2.png "Traffic Sign 2"
-![alt text][image6]: ./examples/3.png "Traffic Sign 3"
-![alt text][image7]: ./examples/4.png "Traffic Sign 4"
-![alt text][image8]: ./examples/5.png "Traffic Sign 5"
+[image1]: ./examples/train_hist.png "Visualization"
+[image2]: ./examples/normalized.png "Normalized"
+[image3]: ./examples/random_noise.jpg "Random Noise"
+[image4]: ./examples/1.png "Traffic Sign 1"
+[image5]: ./examples/2.png "Traffic Sign 2"
+[image6]: ./examples/3.png "Traffic Sign 3"
+[image7]: ./examples/4.png "Traffic Sign 4"
+[image8]: ./examples/5.png "Traffic Sign 5"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -55,7 +55,7 @@ signs data set:
 
 Here is an exploratory visualization of the data set. It is a bar chart showing how the data labels are distributed across various label counts for the training data.
 
-![alt text][image1]: 
+![alt text][image1]
 
 As we can see, there are some traffic signs which appear more times than others. This is to be expected since some signs such as speed limit signs are more common than say animal crossing signs.
 
