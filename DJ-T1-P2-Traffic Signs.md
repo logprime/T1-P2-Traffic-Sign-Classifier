@@ -19,7 +19,7 @@ The goals / steps of this project are the following:
 
 [//]: #  (Image References)
 
-[image1]:  ./examples/train_hist.png "Visualization"
+[image1]:  ./examples/hist_train.png "Visualization"
 [image2]:  ./examples/normalized.png "Normalized"
 [image3]:  ./examples/random_noise.jpg "Random Noise"
 [image4]:  ./examples/1.png "Traffic Sign 1"
@@ -147,7 +147,7 @@ If an iterative approach was chosen:
 
 Here are five traffic signs that I downloaded from the web:-
 
-![alt text][image1] ![alt text][image5] ![alt text][image6] 
+![alt text][image4] ![alt text][image5] ![alt text][image6] 
 ![alt text][image7] ![alt text][image8]
 
 Some of these images are difficult to classify as the resize 
