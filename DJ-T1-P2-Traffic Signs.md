@@ -48,12 +48,13 @@ You're reading it! and here is a link to my [project code](https://github.com/ud
 
 ### Reflection on my "ever in works" T1-P2 commits
 
+NOTE: I have taken guidance on the plotting functions by looking at github repos for examples as well as stack overflow website to understand documentation. I have also used class notes and class exercise for LeNet formulation. 
+
 ### Data Set Summary & Exploration
 
 #### 1. Provide a basic summary of the data set. In the code, the analysis should be done using python, numpy and/or pandas methods rather than hardcoding results manually.
 
-I used the pandas library to calculate summary statistics of the traffic
-signs data set:
+Basic statistics of the traffic signs data set:
 
 * Number of training examples = 34799
 * Number of validation examples = 4410
@@ -73,7 +74,7 @@ As we can see, there are some traffic signs which appear more times than others.
 
 ####1. Describe how you preprocessed the image data. What techniques were chosen and why did you choose these techniques? Consider including images showing the output of each preprocessing technique. Pre-processing refers to techniques such as converting to grayscale, normalization, etc. (OPTIONAL: As described in the "Stand Out Suggestions" part of the rubric, if you generated additional data for training, describe why you decided to generate additional data, how you generated the data, and provide example images of the additional data. Then describe the characteristics of the augmented training set like number of images in the set, number of images for each class, etc.)
 
-As a first step, I normalized the data from range of (0,255) to (-1,1). Here is the example of traffic sign image before and after normalizing.
+As a first step, I normalized the data from range of (0,255) to (-1,1). Here is the example of traffic sign image before and after normalizing (without gray scaling).
 
 ![Normalized][image2]
 
@@ -135,7 +136,7 @@ EPOCH 20 ...
 
 If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen? 
-- My first architecture tried was standard LeNet to make the model work.  The reason was to ensure that entire python notebook compiled properly. I discovered some nuances on making the training sequence work which was helpful for subsequent model planning. Specifically the point of shuffling at the beginning of the training start was where I was making an error initially.
+- The first architecture I implemented was the standard LeNet to make the model work.  The reason was to ensure that entire python notebook compiled properly. I discovered some nuances on making the training sequence work which was helpful for subsequent model planning. Specifically the point of shuffling at the beginning of the training start was where I was making an error initially allocating X_train variable incorrectly to the original image set instead of the normalized image set.
 
 * What were some problems with the initial architecture?
    - My validation accuracy needed was stuck at 91%.
